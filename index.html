@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venant Christian Lee | Design & Development Student</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <button id="theme-toggle" class="theme-btn">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="typewriter">Hi, I'm <span class="highlight">Venant Christian Lee</span></h1>
+      <p class="subtitle">Design & Development Student</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About <span class="highlight">Me</span></h2>
+    <div class="about-container">
+        <div class="image-badge">Seeking Internship</div>
+      </div>
+      <div class="about-content">
+        <p>Computer Science student passionate about creating intuitive digital experiences. Currently deepening my skills in UX design and frontend development through coursework and personal projects. I thrive on solving problems through clean, user-centered design.</p>
+        
+        <div class="skills-container">
+          <div class="skill" data-level="75">
+            <span>ANALYTICS</span>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill" data-level="80">
+            <span>HTML/CSS/JS</span>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill" data-level="70">
+            <span>React</span>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="exp-cards">
+          <div class="exp-card">
+            <span class="number">8</span>
+            <span>Completed UX Case Studies</span>
+          </div>
+          <div class="exp-card">
+            <span class="number">4</span>
+            <span>Programming Languages Learned</span>
+          </div>
+          <div class="exp-card">
+            <span class="number">20+</span>
+            <span>Algorithm Challenges</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section dark-section">
+    <h2>My <span class="highlight">Projects</span></h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="blocks.png" alt="Dodge Block" class="project-img">
+        <div class="project-overlay">
+          <h3>Dodge Block</h3>
+          <a href="https://venant321.github.io/Dodge-Blocks/" class="btn btn-primary">View Game</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="deadline.png" alt="Deadline Reminder" class="project-img">
+        <div class="project-overlay">
+          <h3>Deadline Reminder</h3>
+          <a href="https://venant321.github.io/deadline-reminder" class="btn btn-primary">View Code</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="custome website.png" alt="Custom Website" class="project-img">
+        <div class="project-overlay">
+          <h3>Custome Website</h3>
+          <a href="https://venant321.github.io/custom-website/" class="btn btn-primary">See Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Get In <span class="highlight">Touch</span></h2>
+    <div class="contact-options">
+      <a href="venant321lee@gmail.com" class="contact-link">
+        <i class="fas fa-envelope"></i> venant321lee@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/venant-christian-lee-2b3a20316/" class="contact-link">
+        <i class="fab fa-linkedin"></i>linkedin.com/in/venant-christian-lee-2b3a20316/
+      </a>
+      <a href="https://github.com/venant321" class="contact-link">
+        <i class="fab fa-github"></i>github.com/venant321
+      </a>
+    </div>
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Your Email</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder=" " required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span>Send Message</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+    <div id="form-status"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
